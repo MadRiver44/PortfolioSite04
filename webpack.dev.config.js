@@ -20,13 +20,17 @@ module.exports = {
           }, {
             loader: 'sass-loader'
           }]
-        }]
+        },
+      { test: /\.(png|svg|jpg|gif)$/, use: ['file-loader']},
+      { test: /\.(woff|woff2|eot|ttf|otf)$/, use: ['file-loader']},
+      ]
 
 },
   devServer: {
     contentBase: 'build',
     hot: true,
     inline: true,
+    historyApiFallback: true
   },
   plugins: [
     new HtmlWebpackPlugin({ template: 'src/index.html' }),

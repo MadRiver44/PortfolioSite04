@@ -44,4 +44,6 @@ This will compmleted by 4/28/18
 ## routing
 
 ## links-resources
+    
+    https://sass-guidelin.es/#the-7-1-pattern
 

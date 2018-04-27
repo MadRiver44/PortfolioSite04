@@ -7,13 +7,17 @@ This will compmleted by 4/28/18
 
 # Table of Contents
 
-    1. [Structure](#structure)
-    2. [Public folder](#public)
-    3. [src folder](#src)
+1. [Structure](#structure)
+2. [Public folder](#public)
+3. [src folder](#src)
 
 <a name="structure"></a>Structure
-<a name="public"</a>Public folder
-<a name="src"></a>src folder
+* item
+* item2 
+* item3
+
+<!-- <a name="public"</a>Public folder
+<a name="src"></a>src folder -->
 
 # Structure
 
@@ -21,3 +25,9 @@ This will compmleted by 4/28/18
 
 # src folder
 
+# Table of Contents
+
+<!-- * [Team Members](#team-members)
+
+# <a name="team-members"></a>Team Members
+* "J. Jesus. P. Aguinaga" <admin@listforks.com> -->

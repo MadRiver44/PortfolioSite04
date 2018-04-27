@@ -10,15 +10,38 @@ This will compmleted by 4/28/18
 1. [Structure](#structure)
 2. [Public folder](#public-folder)
 3. [src folder](#src)
+4. [style sheets](#stylesheets)
+5. [server](#server)
+6. [.bablerc](#bablerc)
+7. [webpack development](#webpack-dev)
+8. [webpack production](#webpack-prod)
+9. [testing](#testing)
+10. [routing](#routing)
+11. [links and resources](#links-resources)
 
 
 
-<!-- <a name="public"</a>Public folder
-<a name="src"></a>src folder -->
+
 
 ## structure
 
 ## public-folder
 
 ## src
+
+## stylesheets
+
+## server
+
+## bablerc
+
+## webpack-dev
+
+## webpack-prod
+
+## testing
+
+## routing
+
+## links-resources
 

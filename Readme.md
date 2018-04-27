@@ -7,9 +7,13 @@ This will compmleted by 4/28/18
 
 # Table of Contents
 
-# <a name="structure"></a>Structure
-# <a name="public"</a>Public folder
-# <a name="src"></a>src folder
+    1. [Structure](#structure)
+    2. [Public folder](#public)
+    3. [src folder](#src)
+
+<a name="structure"></a>Structure
+<a name="public"</a>Public folder
+<a name="src"></a>src folder
 
 # Structure
 

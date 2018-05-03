@@ -2,7 +2,21 @@
 
 This is a guide that sets up and explains every aspect of setting up a professional and durable project structure using Webpack for module managment in production and development, React for spa's, babel for transpiling, and Sass for more extensible styling (including the 7 -1 stylesheet organization).
 
-This will compmleted by 4/28/18
+## Todo
+
+| Section     | Task    | Status |
+|-------------|---------|--------|
+| Structure   | detail organization and file structure | in progress |
+| Public      | what goes here and why | todo |
+| src folder  | detail client, server, stylesheets | todo |
+| stylesheets | detail 7-1 organization | todo |
+| .babelrc    | what and why | todo |
+| server      | explain basic server side rendering and routing | todo |
+| webpack-dev | explain and detail components | todo |
+| webpack-prod| explain and detail diff between dev and production | todo |
+| testing     | setup testing for basic components to start | todo |
+| routing     | setup client and server routes | todo |
+| links       | cite docs and other resources | todo |
 
 
 # Table of Contents

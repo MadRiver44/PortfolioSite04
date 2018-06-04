@@ -41,9 +41,42 @@ This is a guide that sets up and explains every aspect of setting up a professio
 
 At the heart of this configuration is how we setup our webpack tools. Here we have a three seperate configurations, Build, Development, and Common. 
 
-Starting with webpack.development.js, we have a tiny export that simply specifies our source map for debugging, and a plugin, ["NamedModulesPlugin"](https://webpack.js.org/plugins/named-modules-plugin/) that will display the relative path of a module when [Hot Module Replacement](https://webpack.js.org/guides/hot-module-replacement/) is in effect,
+Starting with webpack.development.js, we have a tiny export that simply specifies our source map for debugging, and a plugin, ["NamedModulesPlugin"](https://webpack.js.org/plugins/named-modules-plugin/) that will display the relative path of a module when [Hot Module Replacement](https://webpack.js.org/guides/hot-module-replacement/) is in effect.
+
+The webpack.production.js file has two properties, our output file and module property. The module.rules property is an array of rules that determine how a module is created or loaded. In the output, we use 'bundle.[chunkhash:8].js' as the compilation file. What is hashing and why do we use it? For performance reasons, we try to have long term caching, think 'indefinite storage', for static content or assets. Buy doing this we reduce the time it takes to load a file because we do not have to reload other assets, such as images or font files that have not changed, we just use what is cached and plus any other file or request that is new. Chuckhashing in webpack lets us update only those chunk hashes that change. Chunkhashes are based on webpack entrypoints, every entry will have its own hash, if anything changs, that hash is updated.
+
+https://webpack.js.org/guides/caching/
+
+Lastly, the webpack.config.js is the common link between production and development configs. In development, you want certain tools to help for debugging, testing, a hot replacement for modules to view the changes. For production the demands are different, for example we need many optimizations to reduce file sizes with compression. With the file __loadPresets.js__ we check our environment and based on if production or development, we merge that config into the webpack.config.js where plugins and loaders that are mutually beneficial are already set. 
 
 ## public-folder
+
+This folder contains our static assets, fonts that we import and images used throughout our project. 
+
+To import fonts with @font-face
+    1. download a font, ie fonts.google.com, and in the top right corner, select downlaod
+    2. find the downloaded file on your computer, now you have to convert the fonts
+        to particular file types
+    3. Use a service, such as, [transfonter](https://transfonter.org/) to convert to the file types
+        you want.
+    4. Copy these converted files to the Public/Fonts folder
+    5. At the top of your main css file, as an example add...
+    ```
+        @font-face {
+            font-family: 'Julius Sans One';
+                src: url('./JuliusSansOne-Regular.eot');
+                src: url('./JuliusSansOne-Regular.eot?#iefix') format('embedded-opentype'),
+                url('./JuliusSansOne-Regular.woff2') format('woff2'),
+                url('./JuliusSansOne-Regular.woff') format('woff'),
+                url('./JuliusSansOne-Regular.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+    ```
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face
+https://css-tricks.com/snippets/css/using-font-face/
+http://www.miltonbayer.com/font-face/
 
 ## src
 

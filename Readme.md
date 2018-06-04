@@ -55,14 +55,14 @@ This folder contains our static assets, fonts that we import and images used thr
 
 To import fonts with @font-face
 
-    1. download a font, ie fonts.google.com, and in the top right corner, select downlaod
-    2. find the downloaded file on your computer, now you have to convert the fonts
-        to particular file types
-    3. Use a service, such as, [transfonter](https://transfonter.org/) to convert to the file types
-        you want.
-    4. Copy these converted files to the Public/Fonts folder
-    5. At the top of your main css file, as an example add...
-    
+1. download a font, ie fonts.google.com, and in the top right corner, select downlaod
+2. find the downloaded file on your computer, now you have to convert the fonts
+    to particular file types
+3. Use a service, such as, https://transfonter.org/ to convert to the file types
+    you want.
+4. Copy these converted files to the Public/Fonts folder
+5. At the top of your main css file, as an example add...
+
     ```
         @font-face {
             font-family: 'Julius Sans One';

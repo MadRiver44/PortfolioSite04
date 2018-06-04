@@ -76,11 +76,16 @@ To import fonts with @font-face
         }
     ```
 More resources:
-    1. https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face
-    2. https://css-tricks.com/snippets/css/using-font-face/
-    3. http://www.miltonbayer.com/font-face/
+1. https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face
+2. https://css-tricks.com/snippets/css/using-font-face/
+3. http://www.miltonbayer.com/font-face/
 
 ## src
+
+At the root of the src folder is an index.html and an index.js. Index.html is used as a template for webpack to model (the corresponding plugin is located in webpack.config.js and is "HtmlWebpackPlugin") and insert any additionally generated files such as for our bundle.js and links to the css files. The index.js is the root module where all of our React app funnels.
+
+The three main folders are client, where the React app components live, server, which holds our express app for server side rendering, middleware, and any other server-side code, and lastly a state folder where we place all the nesseccary files for state management using Redux.
+
 
 ## stylesheets
 

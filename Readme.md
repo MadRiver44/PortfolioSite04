@@ -41,7 +41,7 @@ This is a guide that sets up and explains every aspect of setting up a professio
 
 At the heart of this configuration is how we setup our webpack tools. Here we have a three seperate configurations, Build, Development, and Common. 
 
-Starting with webpack.development.js, we have a tiny export that simply specifies our source map for debugging, and a plugin, ("NamedModulesPlugin")[https://webpack.js.org/plugins/named-modules-plugin/] that will display the relative path of a module when (Hot Module Replacement)[https://webpack.js.org/guides/hot-module-replacement/] is in effect,
+Starting with webpack.development.js, we have a tiny export that simply specifies our source map for debugging, and a plugin, ["NamedModulesPlugin"](https://webpack.js.org/plugins/named-modules-plugin/) that will display the relative path of a module when [Hot Module Replacement](https://webpack.js.org/guides/hot-module-replacement/) is in effect,
 
 ## public-folder
 

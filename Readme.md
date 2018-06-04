@@ -76,9 +76,9 @@ To import fonts with @font-face
         }
     ```
 More resources:
-https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face
-https://css-tricks.com/snippets/css/using-font-face/
-http://www.miltonbayer.com/font-face/
+    1. https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face
+    2. https://css-tricks.com/snippets/css/using-font-face/
+    3. http://www.miltonbayer.com/font-face/
 
 ## src
 

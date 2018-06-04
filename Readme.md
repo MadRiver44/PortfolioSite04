@@ -1,6 +1,6 @@
 # Webpack Starter Kit
 
-This is a guide that sets up and explains every aspect of setting up a professional and durable project structure using Webpack for module managment in production and development, React for spa's, babel for transpiling, and Sass for more extensible styling (including the 7 -1 stylesheet organization).
+This is a guide that sets up and explains every aspect of setting up a professional and durable project structure using Webpack for module managment in production and development, React for SPA's, babel for transpiling, Jest for testing, and Sass for more extensible styling (including the 7 -1 stylesheet organization).
 
 ## Todo
 
@@ -39,6 +39,10 @@ This is a guide that sets up and explains every aspect of setting up a professio
 
 ## structure
 
+At the heart of this configuration is how we setup our webpack tools. Here we have a three seperate configurations, Build, Development, and Common. 
+
+Starting with webpack.development.js, we have a tiny export that simply specifies our source map for debugging, and a plugin, ("NamedModulesPlugin")[https://webpack.js.org/plugins/named-modules-plugin/] that will display the relative path of a module when (Hot Module Replacement)[https://webpack.js.org/guides/hot-module-replacement/] is in effect,
+
 ## public-folder
 
 ## src
@@ -61,3 +65,18 @@ This is a guide that sets up and explains every aspect of setting up a professio
     
     https://sass-guidelin.es/#the-7-1-pattern
 
+unexpected token import error, babel config should be set to transpile everything 
+excluding imports. Why? because, webpack supports ES MODULES SO IT CAN CONDUCT TREE SHAKING. Tree 
+shaking is the elimination of dead code. Set the 'env' option {modules: false}
+
+by default, jest will set the node environment to 'test'
+
+by having the .babelrc file set to a .js file, in the package.json we can just 
+point the babel preset to point to the .js file
+
+by default jest loads jsdom in the enviromnent (window), we get the giant window objhect
+provided by jsdom, it is very memory intensive and adds to the start timne
+so set the testEnvironment to node, jsdom is the default, no need for installation
+
+
+node cant import css, it will look at it as either json or js only

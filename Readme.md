@@ -6,10 +6,10 @@ This is a guide that sets up and explains every aspect of setting up a professio
 
 | Section     | Task    | Status |
 |-------------|---------|--------|
-| Structure   | detail organization and file structure | in progress |
-| Public      | what goes here and why | todo |
-| src folder  | detail client, server, stylesheets | todo |
-| stylesheets | detail 7-1 organization | todo |
+| Structure   | detail organization and file structure | ✅ |
+| Public      | what goes here and why | ✅ |
+| src folder  | detail client, server, stylesheets | ✅ |
+| stylesheets | detail 7-1 organization | :white_check_mark: |
 | .babelrc    | what and why | todo |
 | server      | explain basic server side rendering and routing | todo |
 | webpack-dev | explain and detail components | todo |
@@ -82,7 +82,7 @@ More resources:
 
 ## src
 
-At the root of the src folder is an index.html and an index.js. Index.html is used as a template for webpack to model (the corresponding plugin is located in webpack.config.js and is "HtmlWebpackPlugin") and insert any additionally generated files such as for our bundle.js and links to the css files. The index.js is the root module where all of our React app funnels.
+At the root of the src folder is an index.html and an index.js. Index.html is used as a template for webpack to model (the corresponding plugin is located in webpack.config.js and is "HtmlWebpackPlugin") and insert any additionally generated files such as for our bundle.js and links to the css files. The index.js is the root module where we moungt the Ract app to the DOM.
 
 The three main folders are client, where the React app components live, server, which holds our express app for server side rendering, middleware, and any other server-side code, and lastly a state folder where we place all the nesseccary files for state management using Redux.
 
